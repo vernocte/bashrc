@@ -42,6 +42,12 @@ HISTFILESIZE=1000
 
 shopt -s checkwinsize
 
+#===================================LOGO=====================================#
+
+echo ""
+echo -e "                          \033[01;32m AD EUNDUM QUO NEMO ANTE IIT"
+echo ""
+
 #===================================COLOURS==================================#
 
 PS1="${White}\t ${Cyan}\u ${Green}\w${Blue}: "

@@ -31,8 +31,9 @@ function extract()
 }
 function maketar() { tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; }
 function makezip() { zip -r "${1%%/}.zip" "$1" ; }
-#==============================PERMITIONS=====================================#
-function sanitize() { sudo chmod -R u=rwX,g=rX,o= "$@" ;}
+#===============================CLEAN==========================================#
+function cleantmp() { find . -type f -name '*~' -delete; }
+function cleanperm() { sudo chmod -R u=rwX,g=rX,o= "$@" ;}
 #================================BACKUP======================================#
 function backup()
 {
